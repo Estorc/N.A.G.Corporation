@@ -7,6 +7,35 @@ background-repeat:repeat;
 
 }
 
+.socialbutton {
+	
+  text-decoration:none;
+  position: relative;
+  text-align: center;
+  padding: 50px 30px;
+  top: 32px;
+  box-shadow: 8px 8px 5px #000000;
+  background-image:url(images/socialbutton.png);
+  margin: 10px;  
+  width: 30px;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  -webkit-text-stroke: 1.5px black;
+	
+}
+
+.naglogo {
+	
+  position: relative;
+  text-align: center;
+  top: 32px;
+  margin: 0 auto;  
+  width: 80em;
+  color: white;
+	
+}
+
 .background_bottom {
 	
   position: absolute; 
@@ -106,7 +135,7 @@ background-repeat:repeat;
   width: 60em;
   color: white;
   font-family: 'Press Start 2P', cursive;
-  text-shadow: 3px 2px grey;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
   -webkit-text-stroke: 1px black;
   
 }
