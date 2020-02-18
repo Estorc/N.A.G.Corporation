@@ -1,9 +1,63 @@
 body {
 
 color:black;
+background-repeat:repeat;
+background: black;
+background-attachment: fixed;
+
+}
+
+.background {
+
+position: fixed;
+color:black;
+width:100%;
+height:100%;
+background: url(https://steamuserimages-a.akamaihd.net/ugc/958613321554117129/19967ACDA6329E46EFDEDF9D0B4E14CEF7B9FF33/);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+ z-index:-5;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+
+}
+
+/* Code d'arrière plan qui disparaît au scroll. */
+
+/* .background {
+
+position: absolute;
+color:black;
+width:100%;
+height:100%;
+background: url(https://steamuserimages-a.akamaihd.net/ugc/958613321554117129/19967ACDA6329E46EFDEDF9D0B4E14CEF7B9FF33/);
+background-attachment: fixed;
+ z-index:-5;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+
+} */
+
+.core {
+
+  position: relative;
+  text-align: center;
+  top: 32px;
+  margin: 0 auto;  
+  width: 90em;
+  color: white;
 background-color:white;
 background-image:url(images/brushed-steel.jpg);
 background-repeat:repeat;
+  box-shadow: 8px 8px 5px #000000;
+  border-radius: 5%;
 
 }
 
@@ -31,10 +85,135 @@ background-repeat:repeat;
   text-align: center;
   top: 32px;
   margin: 0 auto;  
+  width: 40em;
+  color: white;
+	
+}
+
+.fullnaglogo {
+	
+  position: relative;
+  text-align: center;
+  top: 0px;
+  margin: 0 auto;  
   width: 80em;
   color: white;
 	
 }
+
+.socialsbuttons {
+	
+  position: relative;
+  text-align: center;
+  top: 32px;
+  margin: 0 auto;  
+  width: 80em;
+  color: white;
+	
+}
+
+
+			.buttonvideo{
+				position: absolute;
+				height: 63.4px;
+				width: 192px;
+				
+				text-align: center;
+				margin: 0 auto;  
+				left: 63%;
+				top: 80px;
+				
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+			}
+
+			.buttonvideo:hover{
+
+				-webkit-transform: translateX(130px); 
+				-moz-transform: translateX(130px); 
+				-ms-transform: translateX(130px); 
+				-o-transform: translateX(130px); 
+				transform: translateX(130px); 
+			}
+			
+			.button2{
+				position: absolute;
+				height: 63.4px;
+				width: 192px;
+				
+				text-align: center;
+				margin: 0 auto;  
+				left: 63%;
+				top: 155px;
+				
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+			}
+
+			.button2:hover{
+
+				-webkit-transform: translateX(130px); 
+				-moz-transform: translateX(130px); 
+				-ms-transform: translateX(130px); 
+				-o-transform: translateX(130px); 
+				transform: translateX(130px); 
+			}
+			
+			.button3{
+				position: absolute;
+				height: 63.4px;
+				width: 192px;
+				
+				text-align: center;
+				margin: 0 auto;  
+				right: 63%;
+				top: 80px;
+				
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+			}
+
+			.button3:hover{
+
+				-webkit-transform: translateX(-130px); 
+				-moz-transform: translateX(-130px); 
+				-ms-transform: translateX(-130px); 
+				-o-transform: translateX(-130px); 
+				transform: translateX(-130px); 
+			}
+			
+			.button4{
+				position: absolute;
+				height: 63.4px;
+				width: 192px;
+				
+				text-align: center;
+				margin: 0 auto;  
+				right: 63%;
+				top: 155px;
+				
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+			}
+
+			.button4:hover{
+
+				-webkit-transform: translateX(-130px); 
+				-moz-transform: translateX(-130px); 
+				-ms-transform: translateX(-130px); 
+				-o-transform: translateX(-130px); 
+				transform: translateX(-130px); 
+			}
+	
+	
 
 .background_bottom {
 	
