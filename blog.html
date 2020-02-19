@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>N.A.G. Corporation</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="icon" href="images/icon.png" />
 </head>
@@ -13,6 +13,53 @@
 <body>
 <div class="background">
 </div>
+
+
+      <script>
+	  
+		$( function() {
+		
+			$('.imagenews h1').parent().on('mouseover', function(e){
+				$(".imagenews").css('z-index',0);
+				$(this).css('z-index',5);
+				$(this).children().css('height','600px');
+			}).on('mouseout', function(e){      
+				$(this).children().css('height','300px');
+				$(this).css('z-index',5);
+			});
+			
+			$('.imagenews h1').parent().on('mouseover', function(e){
+				$(this).children("h1").css('visibility','visible');
+				$(this).children("h1").css('opacity','1');
+				$(this).children("h1").css('width','auto');
+				$(this).children("img").css('width','auto');
+			}).on('mouseout', function(e){      
+				$(this).children("h1").css('visibility', 'hidden');
+				$(this).children("h1").css('opacity', '0');
+				$(this).children("h1").css('width','auto');
+				$(this).children("img").css('width','auto');
+			});
+		
+			/* Si on passe au dessus du parent 2 */
+			$( ".imagenews" ).hover( function(){
+			/* Pendant le survol, on change la couleur du fond */
+			$( "#blurnews" ).css( "visibility" , "visible" );
+			$( "#blurnews" ).css( "opacity" , "0.75" );
+		  /* Au moment ou la souris quitte le survol */
+		  },function(){
+			/* On remet le fond à la couleur vide (de base) */
+			$( "#blurnews" ).css( "visibility" , "hidden" );
+			$( "#blurnews" ).css( "opacity" , "0" );
+		  });
+		});
+	  </script>
+  
+	  <div id="blurnews" style="left:0;top:0;position:fixed;z-index:1;opacity: 0;visibility: hidden;width:100%;height:100%;background:black;	-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;">
+	  
+	  </div>
+
+
+
 <div class="core">
 	
 	
@@ -78,19 +125,15 @@
 	  <img class="lower_left_screw" src="images/screw.png"/>
 	  <img class="lower_right_screw" src="images/screw.png"/>
 	  
-	  <h1>----- Qui sommes-nous ? -----</h1> 
+	  <h1>----- Qui suis je ? -----</h1> 
 	  <h2>_________________________</h2>
 	  
 	  <img class="estorc-img" src="images/estorc.png" alt="Image de Estorc" />
 	  <h2 style="display:inline;" >Estorc : </h2>
-	  <h3 style="display:inline;" >"Je suis un simple homme comme vous et moi, j'aime créer des choses et avant tout partager. Je crée des jeux vidéos et dessine dans mon temps libre, 
-	  j'aime jouer aux jeux vidéos et bah je suis l'un des fondateur de la N.A.G. Corporation."</h3>
+	  <h3 style="display:inline;" >"En plus d'être l'un des fondateurs de la N.A.G. Corporation, je suis un développeur qui aime profiter de son temps pour créer des jeux et dessiner sur la meilleur application de dessin au monde : GIMP ! <br /><br />Je vous ferai, dans cette page, des posts réguliers de mes créations, alors si cela vous plaît, n'hésistez pas à venir de temps à autre ^^."</h3>
 	 
 	  <h2>_________________________</h2>
 	  
-	  <img class="estorc-img" src="images/Max.png" alt="Image de Max" />
-	  <h2 style="display:inline;" >Max : </h2>
-	  <h3 style="display:inline;" >"N/A"</h3>
 	  
   
 	</div> <br /><br /><br /><br /><br /><br />
@@ -106,16 +149,27 @@
 	  <img class="lower_left_screw" src="images/screw.png"/>
 	  <img class="lower_right_screw" src="images/screw.png"/>
 	  
-	  <h1>----- Pourquoi N.A.G. ? -----</h1> 
+	  <h1>----- News -----</h1> 
 	  <h2>_________________________</h2>
+	  <h3>15/02/2020 : Création du nouveau personnage ^^</h3>
 	  
-	  <h2 style="display:inline;" >Réponse de Estorc : </h2>
-	  <h3 style="display:inline;" >"N.A.G est un acronyme signifiant à l'origine le nom d'une organisation secrète fictive inventé par Max. Nous avons repris ce nom pour notre chaîne, mais celle-ci n'a pas vraiment de rapport avec cette dernière. Cependant, certains éléments de la chaîne, comme le personnage du patron, sont inspiré de "l'atmosphère" de cette organisation. <br /> <br /> Le sens de l'acronyme n'est volontairement pas dévoilé pour vous permettre de tenter de la deviner. Vous obtiendrez des indices en live ^^"</h3>
-
+	  <div style="left:520px;top:200px;" class="imagenews">
+		<h1 style="-webkit-transform: translateY(-110px);-moz-transform: translateY(-110px);-ms-transform: translateY(-110px);-o-transform: translateY(-110px);transform: translateY(-110px);">Estorc Sans Barbe</h1>
+		<img src="images/news/Estorcsansbarbe.png" alt="Estorc Sans Barbe" />
+	  </div>
+	  <div style="left:800px;top:200px;" class="imagenews">
+		<h1>Estorc</h1>
+		<img src="images/news/Estorc.png" alt="Estorc" />
+	  </div>
+	  <div style="right:800px;top:200px;" class="imagenews">
+		<h1 style="-webkit-transform: translateY(-150px);-moz-transform: translateY(-150px);-ms-transform: translateY(-150px);-o-transform: translateY(-150px);transform: translateY(-150px);">Estorc avec un peu de magie...</h1>
+		<img src="images/news/Estorcmagique.png" alt="Estorc avec un peu de magie..." />
+	  </div>
+	  
+	  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 	  <h2>_________________________</h2>
+	  <h3 style="display:inline;" >19/02/2020 : Création de cette page.</h3>
 	  
-	  <h3 style="display:inline;" >"Le patron est un personnage Role Play venant a faire croire aux viewers que la N.A.G. est une organisation dirigé par le patron, aussi appelé "F.". À l'origine, le patron était censé être le seul et unique personnage de la chaîne, s'appelant antérieurement "Le pokéscientifique". Cette idée aura été abandonné dés la création de la N.A.G."</h3>
-
 	  
   
 	</div> <br /><br /><br /><br /><br /><br />
