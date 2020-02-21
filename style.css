@@ -403,7 +403,7 @@ background-repeat:repeat;
 	
 }
 
-.page p,h3,h2,h1,img {
+.page p,h6,h5,h4,h3,h2,h1,img {
 
   position: relative;
 background: rgb(0,42,65);
