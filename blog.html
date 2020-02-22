@@ -24,7 +24,7 @@
 				$(this).css('z-index',5);
 				$(this).children().css('height','600px');
 			}).on('mouseout', function(e){      
-				$(this).children().css('height','300px');
+				$(this).children().css('height',$(this).attr("defheight"));
 				$(this).css('z-index',5);
 			});
 			
@@ -179,20 +179,51 @@
 	  
 	  <h1>----- News -----</h1> 
 	  <h2>_________________________</h2>
+	  <h3>22/02/2020 : Resprite des monstres de The Dark Storm ^^</h3>
+	  
+	  <div style="height:248px" id="files">
+		  <div defheight="64px" style="height:64px;left:470px;top:40px;" class="imagenews">
+			<h1 style="height:64px;-webkit-transform: translateY(-90px);-moz-transform: translateY(-90px);-ms-transform: translateY(-90px);-o-transform: translateY(-90px);transform: translateY(-90px);">Shellow Alpha</h1>
+			<img style="height:64px;image-rendering: pixelated;" src="images/news/Boss1.gif" alt="Shellow Alpha" />
+		  </div>
+		  <div defheight="64px" style="height:64px;left:800px;top:40px;" class="imagenews">
+			<h1 style="height:64px;">Medusa</h1>
+			<img style="height:64px;image-rendering: pixelated;" src="images/news/Boss2.gif" alt="Medusa" />
+		  </div>
+		  <div defheight="64px" style="height:64px;right:800px;top:40px;" class="imagenews">
+			<h1 style="height:64px;-webkit-transform: translateY(-90px);-moz-transform: translateY(-90px);-ms-transform: translateY(-90px);-o-transform: translateY(-90px);transform: translateY(-90px);">Squelette Géant</h1>
+			<img style="height:64px;image-rendering: pixelated;" src="images/news/BossS1.gif" alt="Squelette Géant" />
+		  </div>
+		  
+		  <div defheight="64px" style="height:64px;left:470px;top:144px;" class="imagenews">
+			<h1 style="height:64px;-webkit-transform: translateY(-90px);-moz-transform: translateY(-90px);-ms-transform: translateY(-90px);-o-transform: translateY(-90px);transform: translateY(-90px);">Crâne d'éther</h1>
+			<img style="height:64px;image-rendering: pixelated;" src="images/news/bluefire.gif" alt="Crâne d'éther" />
+		  </div>
+		  <div defheight="64px" style="height:64px;left:800px;top:144px;" class="imagenews">
+			<h1 style="height:64px;">Squelette</h1>
+			<img style="height:64px;image-rendering: pixelated;" src="images/news/skeleton.gif" alt="Squelette" />
+		  </div>
+		  <div defheight="64px" style="height:64px;right:800px;top:144px;" class="imagenews">
+			<h1 style="height:64px;">Shellow</h1>
+			<img style="height:64px;image-rendering: pixelated;" src="images/news/darkshadow.gif" alt="Shellow" />
+		  </div>
+	  </div>
+	  
+	  <h2>_________________________</h2>
 	  <h3>21/02/2020 : Création de la section The Dark Storm.</h3>
 	  <h2>_________________________</h2>
 	  <h3>15/02/2020 : Création du nouveau personnage ^^</h3>
 	  
 	  <div id="files">
-		  <div style="left:470px;top:40px;" class="imagenews">
+		  <div defheight="300px" style="left:470px;top:40px;" class="imagenews">
 			<h1 style="-webkit-transform: translateY(-110px);-moz-transform: translateY(-110px);-ms-transform: translateY(-110px);-o-transform: translateY(-110px);transform: translateY(-110px);">Estorc Sans Barbe</h1>
 			<img src="images/news/Estorcsansbarbe.png" alt="Estorc Sans Barbe" />
 		  </div>
-		  <div style="left:800px;top:40px;" class="imagenews">
+		  <div defheight="300px" style="left:800px;top:40px;" class="imagenews">
 			<h1>Estorc</h1>
 			<img src="images/news/Estorc.png" alt="Estorc" />
 		  </div>
-		  <div style="right:800px;top:40px;" class="imagenews">
+		  <div defheight="300px" style="right:800px;top:40px;" class="imagenews">
 			<h1 style="-webkit-transform: translateY(-150px);-moz-transform: translateY(-150px);-ms-transform: translateY(-150px);-o-transform: translateY(-150px);transform: translateY(-150px);">Estorc avec un peu de magie...</h1>
 			<img src="images/news/Estorcmagique.png" alt="Estorc avec un peu de magie..." />
 		  </div>

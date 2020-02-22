@@ -365,6 +365,7 @@ background-repeat:repeat;
 
 .imagenews h1 {
 	
+	visibility: hidden;
 	position: absolute;
 	margin: 0 auto;
 	justify-content:center;
