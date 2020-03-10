@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" prefix="og: http://ogp.me/ns#">
 
 <head>
   <meta charset="utf-8">
@@ -8,6 +8,10 @@
   <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="icon" href="images/icon.png" />
+  <meta property="og:image" content="images/naglogo.png" />
+  <meta property="og:description" 
+    content="Le site officiel de la N.A.G. Corporation." />
+  <meta property="og:site_name" content="N.A.G. Corporation" />
 </head>
 
 <body>
@@ -22,10 +26,9 @@
 			$('.imagenews h1').parent().on('mouseover', function(e){
 				$(".imagenews").css('z-index',0);
 				$(this).css('z-index',5);
-				$(this).children().css('height','600px'); 
+				$(this).children().css('height','600px');
 			}).on('mouseout', function(e){      
 				$(this).children().css('height',$(this).attr("defheight"));
-				$(this).css('z-index',5);
 			});
 			
 			$('.imagenews h1').parent().on('mouseover', function(e){
