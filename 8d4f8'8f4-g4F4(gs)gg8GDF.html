@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<body style="width:500px;text-align:center;margin: 0 auto;  ">
+
+<h3>ARCHIVE DE LA CUVE DE RESURRECTION</h3>
+
+<input type="text" id="myText" value="">
+
+<button onclick="myFunction()">Check</button>
+
+<p id="export"></p>
+
+<script>
+
+jQuery.loadScript = function (url, callback) {
+    jQuery.ajax({
+        url: url,
+        dataType: 'script',
+        success: callback,
+        async: true
+    });
+}
+
+
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("export").innerHTML = x;
+  if (typeof someObject == 'undefined') $.loadScript('scripts/'+ x +'.js', function(){
+    document.getElementById("export").innerHTML = y;
+  });
+}
+
+
+</script>
+
+</body>
+</html>
