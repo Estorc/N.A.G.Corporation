@@ -1,1 +1,1 @@
-var y = "youtube";
+var y = "PRESSION_THERMIQUE:MAXIMUM | NOMBRE_D_ESSAIS_ACTIFS:4235 | POURCENTAGE_DE_REUSSITE:98.7% </br></br>RESUME DES CONFIGURATION :</br></br>OXYGENE:DLX-1358</br>TRANSMISSION_DE_SANG:AB</br>ENREGISTREMENT_AUDIO:ACTIVE</br>TAILLE:2M</br>LIQUIDE:APSYPHOBE-2</br>CHAINE_EXPORT:[f5qsdAf45sdf4SD4]</br></br>________________________</br></br>⠠⠹⠠⠡⠠⠹⠠⠪⠠⠹⠠⠹⠠⠹⠠⠱⠠⠱⠁⠠⠣⠙⠠⠹⠙⠠⠹⠋⠠⠹⠠⠪⠠⠣⠠⠼⠠⠣⠠⠡ ⠓⠞⠞⠏⠎⠒//⠙⠊⠎⠉⠕⠗⠙⠲⠛⠛/⠠⠱⠨⠭⠠⠱⠨⠵⠥⠞⠨⠭";
