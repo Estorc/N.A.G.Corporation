@@ -56,8 +56,9 @@ background-attachment: fixed;
   width: 90em;
   color: white;
 background-color:white;
-background-image:url(images/brushed-steel.jpg);
+background-image: url(images/brushed-steel.jpg);
 background-repeat:repeat;
+
   box-shadow: 8px 8px 5px #000000;
   border-radius: 5%;
 
