@@ -2,11 +2,11 @@
 <html lang="fr" prefix="og: http://ogp.me/ns#">
 
 <head>
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="scripts/script.js"></script>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>N.A.G. Corporation</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
   <meta property="og:image" content="https://estorc.github.io/N.A.G.Corporation/images/icon.png" />
   <meta property="og:description" 
@@ -15,14 +15,33 @@
   <meta property="og:title" content="N.A.G. Corporation" />
   <meta property="og:site_name" content="N.A.G. Corporation" />
   <link rel="icon" href="images/icon.png" />
-  <script>
-	screen.orientation.lock('landscape');
-  </script>
 </head>
 
 <body>
 <div class="background">
 </div>
+
+
+
+		<div id='phoneMenu'>
+			<a href="javascript:phoneMenu();" style="color:white;">
+			<img alt="phoneMenu" src="images/phonebutton.png" />
+			</a>
+			<nav id='phoneMenuList'>
+				<a href="index.html">Acceuil</a><br>
+				<a href="videos.html">Vidéos</a><br>
+				<a href="others.html">Autres</a><br>
+				<a href="about.html">Raptor Production</a><br>
+				<a href="about.html">Projets</a><br>
+				<p style='line-height:5px;'>----------------</p>
+				<a href="https://www.twitch.tv/nag_corp">Twitch</a><br>
+				<a href="https://www.youtube.com/channel/UCkPvXHZi_QuzxvKqiYtuy7g">Youtube</a><br>
+				<a href="https://discord.gg/NQcQtTc">Discord</a><br>
+			</nav>
+		</div>
+
+
+
 <div class="core">
 	
 	
@@ -88,21 +107,21 @@
 	  <img class="lower_left_screw" src="images/screw.png"/>
 	  <img class="lower_right_screw" src="images/screw.png"/>
 	  
-	  <h1>----- Vidéos -----</h1> 
+	  <h1><span id='pctext'>----- </span>Vidéos<span id='pctext'> -----</span></h1> 
 	  <h2>_________________________</h2>
 	  <h2>Dernière vidéo :</h2>
 	  
-	  <iframe style="position:relative;z-index:1" width="600" height="340" src="https://www.youtube.com/embed/+lastest?list=UUkPvXHZi_QuzxvKqiYtuy7g" frameborder="1" allowfullscreen></iframe>
+	  <iframe width="60%" height="315" src="https://www.youtube.com/embed/91WwND5zFFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	 
 	  <h2>_________________________</h2>
 	  <h2>Live Twitch :</h2>
-	  <iframe style="display:inline;position:relative;z-index:1" src="https://player.twitch.tv/?channel=n_a_g_corporation" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-	  <iframe style="display:inline;position:relative;z-index:1" src="https://www.twitch.tv/embed/n_a_g_corporation/chat" frameborder="0" scrolling="no" height="378" width="250"></iframe>
+	  <iframe style="display:inline;position:relative;z-index:1" src="https://player.twitch.tv/?channel=nag_corp&parent=streamernews.example.com" frameborder="0" allowfullscreen scrolling="no" height="378" width="70%"></iframe>
+	  <iframe style="display:inline;position:relative;z-index:1" src="https://www.twitch.tv/embed/nag_corp/chat?parent=nag_corp.twitch.tv" frameborder="0" scrolling="no" height="378" width="20%"></iframe>
 	  
 	  <h2>_________________________</h2>
 	  <h2>Nos p'tits amis :</h2>
 	  
-		<div id="build-sample" style="position:relative;z-index:1; box-shadow: 8px 8px 5px #000000;margin: 0 auto;text-align: center;width: 40em;padding: 8px; background-image:url(images/socialbutton.png);">
+		<div id="build-sample" style="position:relative;z-index:1; box-shadow: 8px 8px 5px #000000;margin: 0 auto;text-align: center;width: 60%;padding: 8px; background-image:url(images/socialbutton.png);">
 		<div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline; width: 167px; height: 48px;" id="___ytsubscribe_11">
 		<iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="display:inline;position: relative; top: 0px; width: 167px; margin: 0px 75px; border-style: none;  visibility: visible; height: 48px;" tabindex="0" vspace="0" width="100%" id="I20_1582060942315" name="I20_1582060942315" src="https://www.youtube.com/subscribe_embed?usegapi=1&amp;channelid=UC3IpBfNEN88CfF31Vo5lJmA&amp;layout=full&amp;theme=dark&amp;count=default&amp;origin=https%3A%2F%2Fdevelopers-dot-devsite-v2-prod.appspot.com&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.fr.HrYtnuOsJ9o.O%2Fam%3DwQE%2Fd%3D1%2Fct%3Dzgms%2Frs%3DAGLTcCOM4asNhhVgOFJKHWvKD0xkG7mu1Q%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I20_1582060942315&amp;_gfid=I20_1582060942315&amp;parent=https%3A%2F%2Fdevelopers-dot-devsite-v2-prod.appspot.com&amp;pfname=&amp;rpctoken=28389904" data-gapiattached="true"></iframe>
 		<div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline; width: 167px; height: 48px;" id="___ytsubscribe_11">
@@ -111,7 +130,7 @@
 		</div>
 		</div><br />
 		
-	  <iframe style="position:relative;z-index:1" width="600" height="340" src="https://www.youtube.com/embed/+lastest?list=UU3IpBfNEN88CfF31Vo5lJmA" frameborder="1" allowfullscreen></iframe>
+	  <iframe style="position:relative;z-index:1" width="60%" height="340" src="https://www.youtube.com/embed/+lastest?list=UU3IpBfNEN88CfF31Vo5lJmA" frameborder="1" allowfullscreen></iframe>
 	  
   
 	</div> <br /><br /><br /><br /><br /><br />

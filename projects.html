@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="fr" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N.A.G. Corporation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/icon.png" />
+  <meta property="og:image" content="https://estorc.github.io/N.A.G.Corporation/images/icon.png" />
+  <meta property="og:description" 
+    content="Le site officiel de la N.A.G. Corporation." />
+  <meta property="og:url" content="https://estorc.github.io/N.A.G.Corporation/blog" />
+  <meta property="og:title" content="N.A.G. Corporation" />
+  <meta property="og:site_name" content="N.A.G. Corporation" />
+</head>
+
+<body>
+<div class="background">
+</div>
+
+
+      <script>
+	  
+		$( function() {
+		
+			$('.imagenews h1').parent().on('mouseover', function(e){
+				$(".imagenews").css('z-index',0);
+				$(this).css('z-index',5);
+				$(this).children().css('height','600px');
+			}).on('mouseout', function(e){      
+				$(this).children().css('height',$(this).attr("defheight"));
+			});
+			
+			$('.imagenews h1').parent().on('mouseover', function(e){
+				$(this).children("h1").css('visibility','visible');
+				$(this).children("h1").css('opacity','1');
+				$(this).children("h1").css('width','auto');
+				$(this).children("img").css('width','auto');
+			}).on('mouseout', function(e){      
+				$(this).children("h1").css('visibility', 'hidden');
+				$(this).children("h1").css('opacity', '0');
+				$(this).children("h1").css('width','auto');
+				$(this).children("img").css('width','auto');
+			});
+		
+			/* Si on passe au dessus du parent 2 */
+			$( ".imagenews" ).hover( function(){
+			/* Pendant le survol, on change la couleur du fond */
+			$( "#blurnews" ).css( "visibility" , "visible" );
+			$( "#blurnews" ).css( "opacity" , "0.75" );
+		  /* Au moment ou la souris quitte le survol */
+		  },function(){
+			/* On remet le fond à la couleur vide (de base) */
+			$( "#blurnews" ).css( "visibility" , "hidden" );
+			$( "#blurnews" ).css( "opacity" , "0" );
+		  });
+		});
+	  </script>
+  
+	  <div id="blurnews" style="left:0;top:0;position:fixed;z-index:1;opacity: 0;visibility: hidden;width:100%;height:100%;background:black;	-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;">
+	  
+	  </div>
+
+
+
+<div class="core">
+	
+	
+	<div class="fullnaglogo">
+
+		<div class="buttonvideo">
+			<a href="videos.html">
+				<img style="width:100%;height:100%;" src="images/videos-button.png" alt="N.A.G. Big Logo" /> <br />
+			</a>
+		</div>
+		<div class="button2">
+			<a href="pkmnr.html">
+				<img style="width:100%;height:100%;" src="images/pkmn-button.png" alt="N.A.G. Big Logo" /> <br />
+			</a>
+		</div>
+		<div class="button3">
+			<a href="blog.html">
+				<img style="width:100%;height:100%;" src="images/blog-button.png" alt="N.A.G. Big Logo" /> <br />
+			</a>
+		</div>
+		<div class="button4">
+			<a href="others.html">
+				<img style="width:100%;height:100%;" src="images/others.png" alt="N.A.G. Big Logo" /> <br />
+			</a>
+		</div>
+		
+		
+		
+
+		<div class="naglogo">
+			<a href="index.html">
+				<img style="width:100%;height:100%;" src="images/naglogo.png" alt="N.A.G. Big Logo" /> <br />
+			</a>
+		</div>
+		
+	</div>
+	
+	<div class="socialsbuttons">
+		<a class="socialbutton" href="https://www.twitch.tv/nag_corp">
+			<img style="top:15px;display:inline;width:50px;height:50px;" src="images/twitch.png" alt="N.A.G. Big Logo" />
+			<h2 style="color:white;display:inline;"> Twitch </h2>
+		</a>
+
+		<a class="socialbutton" href="https://www.youtube.com/channel/UCkPvXHZi_QuzxvKqiYtuy7g">
+			<img style="display:inline;width:50px;height:30px" src="images/youtube.png" alt="N.A.G. Big Logo" />
+			<h2 style="color:white;display:inline;"> Youtube </h2>
+		</a>
+		
+		<a class="socialbutton" href="https://discord.gg/NQcQtTc">
+			<img style="top:15px;display:inline;width:50px;height:50px" src="images/discord.png" alt="N.A.G. Big Logo" /> 
+			<h2 style="color:white;display:inline;"> Discord </h2>
+		</a><br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+	</div>
+
+	<div class="page">
+	  <div class="background_bottom"> </div>
+	  <div class="up_screwbar"> </div>
+	  <div class="left_screwbar"> </div>
+	  <div class="right_screwbar"> </div>
+	  <div class="down_screwbar"> </div>
+	  <img class="upper_left_screw" src="images/screw.png"/>
+	  <img class="upper_right_screw" src="images/screw.png"/>
+	  <img class="lower_left_screw" src="images/screw.png"/>
+	  <img class="lower_right_screw" src="images/screw.png"/>
+	  
+	  <h1>----- Qui suis je ? -----</h1> 
+	  <h2>_________________________</h2>
+	  
+	  <img class="estorc-img" src="images/estorc.png" alt="Image de Estorc" />
+	  <h2 style="display:inline;" >Estorc : </h2>
+	  <h3 style="display:inline;" >"En plus d'être l'un des fondateurs de la N.A.G. Corporation, je suis un développeur qui aime profiter de son temps pour créer des jeux et dessiner sur la meilleur application de dessin au monde : GIMP ! <br /><br />~~~<br /><br />Je vous ferai, dans cette page, des posts réguliers de mes créations, alors si cela vous plaît, n'hésistez pas à venir de temps à autre ^^."</h3>
+	 
+	  <h2>_________________________</h2>
+	  
+	  
+  
+	</div> <br /><br /><br /><br /><br /><br />
+	
+	<div style="background-image:url(images/darkbackground.png)" class="page">
+	  <div style="background-image:url(images/darkbasbackground.png)" class="background_bottom"> </div>
+	  <div style="background-image:url(images/darkorb-.png)" class="up_screwbar"> </div>
+	  <div style="background-image:url(images/darkorbl.png)" class="left_screwbar"> </div>
+	  <div style="background-image:url(images/darkorbl.png)" class="right_screwbar"> </div>
+	  <div style="background-image:url(images/darkorb-.png)" class="down_screwbar"> </div>
+	  <img class="upper_left_screw" src="images/darkorb.png"/>
+	  <img class="upper_right_screw" src="images/darkorb.png"/>
+	  <img class="lower_left_screw" src="images/darkorb.png"/>
+	  <img class="lower_right_screw" src="images/darkorb.png"/>
+	  
+	  <h1 style="display:inline;vertical-align:middle;">----- </h1><img style="display:inline;vertical-align:middle;" src="images/thedarkstorm.png"/><h1 style="display:inline;vertical-align:middle;"> -----</h1> 
+	  <h2>_________________________</h2>
+	  
+	  <img class="estorc-img" src="images/estorc.png" alt="Image de Estorc" />
+	  <h2 style="display:inline;" >Estorc : </h2>
+	  <h3 style="display:inline;" >"The Dark Storm est mon deuxième plus grand projet après Pokémon Rocket. Il s'agit d'un jeu RPG Open World où vous devez affronter des créatures cauchemardesques qui ont envahi votre monde. C'est un jeu dans un style médieval avec une difficulté variée allant de "Normal" à "Impossible" en passant par "Difficile" et "Cauchemardesque".<br/><br/><img src="images/warriorhammer.gif"/> Le jeu est actuellement en cours de développement...<br/><br/>Ce jeu possède actuellement :<br/><img style="vertical-align:middle;" src="images/spider.gif"/> - Une vingtaine de monstres<br/><img style="vertical-align:middle;" src="images/chest.png"/> - Une grande variété d'objets<br/><img style="vertical-align:middle;" src="images/boss.png"/> - Plus de 5 Boss différents<br/><img style="vertical-align:middle;" src="images/map.png"/> - Une carte énorme à explorer<br/><img style="vertical-align:middle;" src="images/armes.png"/> - Une vingtaine d'armes diverses<br/><img style="vertical-align:middle;" src="images/classes.png"/> - 3 classes uniques<br/><br/>Je publie souvent sur cette page des posts sur le jeu, n'hésitez pas à aller voir, je ferai également quelques lives dessus où je coderai en discutant avec vous de tout et rien si ça vous intéresse."<br/><br/></h3>
+	 
+		<a href="http://www.mediafire.com/file/vdoykunp9g1u7j9/The_Dark_Storm.zip/file">
+			<img style="top:15px;width:250px" src="images/Download.png" alt="N.A.G. Big Logo" /> 
+		</a>
+	 
+	  <h2>_________________________</h2>
+	  
+	  
+  
+	</div> <br /><br /><br /><br /><br /><br />
+	
+	<div class="page">
+	  <div class="background_bottom"> </div>
+	  <div class="up_screwbar"> </div>
+	  <div class="left_screwbar"> </div>
+	  <div class="right_screwbar"> </div>
+	  <div class="down_screwbar"> </div>
+	  <img class="upper_left_screw" src="images/screw.png"/>
+	  <img class="upper_right_screw" src="images/screw.png"/>
+	  <img class="lower_left_screw" src="images/screw.png"/>
+	  <img class="lower_right_screw" src="images/screw.png"/>
+	  
+	  <h1>----- News -----</h1> 
+	  
+	  <h2>_________________________</h2>
+	  <h3>07/05/2020 : Première épisode de The Night Walkers "Episode 0: Epilogue"</h3>
+	  <div id="files">
+	    </br>
+	    </br>
+	    </br>
+		<iframe style="position:relative;z-index:1"  width="900" height="300" src="https://www.youtube.com/embed/qMPH_ta2s_I" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  </div>
+	  <h2>_________________________</h2>
+	  <h3>01/03/2020 : Création des nouveaux personnages ^^</h3>
+	  
+	  <div id="files">
+		  <div defheight="300px" style="left:470px;top:40px;" class="imagenews">
+			<h1>Max</h1>
+			<img src="images/news/Max.png" alt="Max" />
+		  </div>
+		  <div defheight="300px" style="left:800px;top:40px;" class="imagenews">
+			<h1>Estorc</h1>
+			<img src="images/news/Estorc.png" alt="Estorc" />
+		  </div>
+		  <div defheight="300px" style="right:800px;top:40px;" class="imagenews">
+			<h1 style="-webkit-transform: translateY(-110px);-moz-transform: translateY(-110px);-ms-transform: translateY(-110px);-o-transform: translateY(-110px);transform: translateY(-110px);">Le Patron ?</h1>
+			<img src="images/news/Patron Hide.png" alt="Le Patron ?" />
+		  </div>
+	  </div>
+	  
+	  
+	  <h2>_________________________</h2>
+	  <h3>29/02/2020 : Création d'une intro pour mon futur let's play ^^</h3>
+	  
+<video style="font-family:Calibri;-webkit-text-fill-color: rgba(255,255,255,1);-webkit-text-stroke: 0.5px black;" controls width="500">
+
+    <source src="images/news/Mario RPG Intro.mp4" type="video/mp4">>
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+	  
+	  
+	  <h2>_________________________</h2>
+	  <h3>22/02/2020 : Resprite des monstres de The Dark Storm ^^</h3>
+	  
+	  <div style="height:248px" id="files">
+		  <div defheight="64px" style="height:64px;left:470px;top:40px;" class="imagenews">
+			<h1 style="height:64px;-webkit-transform: translateY(-90px);-moz-transform: translateY(-90px);-ms-transform: translateY(-90px);-o-transform: translateY(-90px);transform: translateY(-90px);">Shellow Alpha</h1>
+			<img style="height:64px;image-rendering: pixelated;" src="images/news/Boss1.gif" alt="Shellow Alpha" />
+		  </div>
+		  <div defheight="64px" style="height:64px;left:800px;top:40px;" class="imagenews">
+			<h1 style="height:64px;">Medusa</h1>
+			<img style="height:64px;image-rendering: pixelated;" src="images/news/Boss2.gif" alt="Medusa" />
+		  </div>
+		  <div defheight="64px" style="height:64px;right:800px;top:40px;" class="imagenews">
+			<h1 style="height:64px;-webkit-transform: translateY(-90px);-moz-transform: translateY(-90px);-ms-transform: translateY(-90px);-o-transform: translateY(-90px);transform: translateY(-90px);">Squelette Géant</h1>
+			<img style="height:64px;image-rendering: pixelated;" src="images/news/BossS1.gif" alt="Squelette Géant" />
+		  </div>
+		  
+		  <div defheight="64px" style="height:64px;left:470px;top:144px;" class="imagenews">
+			<h1 style="height:64px;-webkit-transform: translateY(-90px);-moz-transform: translateY(-90px);-ms-transform: translateY(-90px);-o-transform: translateY(-90px);transform: translateY(-90px);">Crâne d'éther</h1>
+			<img style="height:64px;image-rendering: pixelated;" src="images/news/bluefire.gif" alt="Crâne d'éther" />
+		  </div>
+		  <div defheight="64px" style="height:64px;left:800px;top:144px;" class="imagenews">
+			<h1 style="height:64px;">Squelette</h1>
+			<img style="height:64px;image-rendering: pixelated;" src="images/news/skeleton.gif" alt="Squelette" />
+		  </div>
+		  <div defheight="64px" style="height:64px;right:800px;top:144px;" class="imagenews">
+			<h1 style="height:64px;">Shellow</h1>
+			<img style="height:64px;image-rendering: pixelated;" src="images/news/darkshadow.gif" alt="Shellow" />
+		  </div>
+	  </div>
+	
+
+
+	  <h2>_________________________</h2>
+	  <h3>21/02/2020 : Création de la section The Dark Storm.</h3>
+	  <h2>_________________________</h2>
+	  <h3>15/02/2020 : Création du nouveau personnage ^^</h3>
+	  
+	  <div id="files">
+		  <div defheight="300px" style="left:470px;top:40px;" class="imagenews">
+			<h1 style="-webkit-transform: translateY(-110px);-moz-transform: translateY(-110px);-ms-transform: translateY(-110px);-o-transform: translateY(-110px);transform: translateY(-110px);">Estorc Sans Barbe</h1>
+			<img src="images/news/Estorcsansbarbe.png" alt="Estorc Sans Barbe" />
+		  </div>
+		  <div defheight="300px" style="left:800px;top:40px;" class="imagenews">
+			<h1>Estorc</h1>
+			<img src="images/news/Estorc.png" alt="Estorc" />
+		  </div>
+		  <div defheight="300px" style="right:800px;top:40px;" class="imagenews">
+			<h1 style="-webkit-transform: translateY(-150px);-moz-transform: translateY(-150px);-ms-transform: translateY(-150px);-o-transform: translateY(-150px);transform: translateY(-150px);">Estorc avec un peu de magie...</h1>
+			<img src="images/news/Estorcmagique.png" alt="Estorc avec un peu de magie..." />
+		  </div>
+	  </div>
+	  
+	  <h2>_________________________</h2>
+	  <h3 style="display:inline;" >19/02/2020 : Création de cette page.</h3>
+	  
+	  
+  
+	</div> <br /><br /><br /><br /><br /><br />
+
+</div>
+</body>
+
+</html>

@@ -2,8 +2,9 @@
 <html lang="fr" prefix="og: http://ogp.me/ns#">
 
 <head>
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="scripts/script.js"></script>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>N.A.G. Corporation</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
@@ -15,14 +16,36 @@
   <meta property="og:title" content="N.A.G. Corporation" />
   <meta property="og:site_name" content="N.A.G. Corporation" />
   <link rel="icon" href="images/icon.png" />
-  <script>
-	screen.orientation.lock('landscape');
-  </script>
 </head>
 
 <body>
 <div class="background">
 </div>
+
+
+
+
+
+		<div id='phoneMenu'>
+			<a href="javascript:phoneMenu();" style="color:white;">
+			<img alt="phoneMenu" src="images/phonebutton.png" />
+			</a>
+			<nav id='phoneMenuList'>
+				<a href="index.html">Acceuil</a><br>
+				<a href="videos.html">Vidéos</a><br>
+				<a href="others.html">Autres</a><br>
+				<a href="about.html">Raptor Production</a><br>
+				<a href="about.html">Projets</a><br>
+				<p style='line-height:5px;'>----------------</p>
+				<a href="https://www.twitch.tv/nag_corp">Twitch</a><br>
+				<a href="https://www.youtube.com/channel/UCkPvXHZi_QuzxvKqiYtuy7g">Youtube</a><br>
+				<a href="https://discord.gg/NQcQtTc">Discord</a><br>
+			</nav>
+		</div>
+
+
+
+
 <div class="core">
 	
 	
@@ -88,7 +111,7 @@
 	  <img class="lower_left_screw" src="images/screw.png"/>
 	  <img class="lower_right_screw" src="images/screw.png"/>
 	  
-	  <h1>----- Lives : -----</h1> 
+	  <h1><span id='pctext'>----- </span>Lives :<span id='pctext'> -----</span></h1> 
 	  <h2>_________________________</h2>
 	  
 	  <h3 style="display:inline;" >Si vous ne la suivez pas encore, je vous invite à suivre notre chaîne twitch : <a style="color:#000088;text-decoration:none;-webkit-text-stroke: 1px #000022;" a href="https://www.twitch.tv/nag_corp"> https://www.twitch.tv/nag_corp.</a></h3>
@@ -113,50 +136,50 @@
 	  <img class="lower_left_screw" src="images/screw.png"/>
 	  <img class="lower_right_screw" src="images/screw.png"/>
 	  
-	  <h1>----- Découvertes : -----</h1> 
+	  <h1><span id='pctext'>----- </span>Découvertes :<span id='pctext'> -----</span></h1> 
 	  <h2>_________________________</h2>
 	  
 	  <h3 style="display:inline;" >Ici, on parle de nos petites découvertes sur le web (la toile pour les francophone 😉) qu'elles soient vielles ou non ^^:</h3>
 	 
 	  <h2>_________________________</h2>
 	  <h2 style="display:inline;" >La chanson du dimanche :</h2><h3 style="display:inline;" ><br />Une petite découverte de Estorc dans l'année de 2019. C'est un peu vieux, mais c'est toujours aussi bon ^^ :</br></br></h3>
-	  <iframe style="position:relative;z-index:1"  width="900" height="300" src="https://www.youtube.com/embed/Bk7B0hsk_R0" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe style="position:relative;z-index:1"  width="80%" height="300" src="https://www.youtube.com/embed/Bk7B0hsk_R0" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	  
 	 
 	  <h2>_________________________</h2>
 	  <h2 style="display:inline;" >Savun :</h2><h3 style="display:inline;" ><br />Toujours sur Youtube, une petite pépite de ces trois dernières années ^^. Un "petit" testeur de jeux-vidéos, très second degré, très salé avec un fond d'irrespect et d'humour noir... Je vous invite à aller regarder ^^ :</br></br></h3>
-	  <iframe style="position:relative;z-index:1"  width="900" height="300" src="https://www.youtube.com/embed/CL4iCvbXhEc" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe style="position:relative;z-index:1"  width="80%" height="300" src="https://www.youtube.com/embed/CL4iCvbXhEc" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	  
 	 
 	  <h2>_________________________</h2>
 	  <h2 style="display:inline;" >Feldup :</h2><h3 style="display:inline;" ><br />Encore un petit Youtubeur, et cette fois-ci, moins dans le ton de l'humour, ce dernier traite de diverses histoires d'horreurs et de trouvailles sombres sur la toile. C'est très sympa, et l'ambience est cool :</br></br></h3>
-	  <iframe style="position:relative;z-index:1"  width="900" height="300" src="https://www.youtube.com/embed/B7txRLnIJGE" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe style="position:relative;z-index:1"  width="80%" height="300" src="https://www.youtube.com/embed/B7txRLnIJGE" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	  
 	 
 	  <h2>_________________________</h2>
 	  <h2 style="display:inline;" >Star Wars Déconne :</h2><h3 style="display:inline;" ><br />Parmis les doublages foireux, les webs séries en veux-tu en voilà et les vidéos Star Wars, Star Wars Déconne se démarque bien du reste. En effet, c'est un humour débile, critiquant de la société, et des caricatures suréalistes que propose cette Web Série. Vous avez 2 heures devant vous, alors prenez une bonne bière, mettez-vous sur votre canapé, et découvrez ce chef-d'oeuvre ^^. </br>(On est sympa, on a même mis l'épisode 1 en dessous de ce texte ^^ :)</br></br></h3>
-	  <iframe style="position:relative;z-index:1"  width="900" height="300" src="https://www.youtube.com/embed/YDYUIs7QRwE" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe style="position:relative;z-index:1"  width="80%" height="300" src="https://www.youtube.com/embed/YDYUIs7QRwE" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	  
 	 
 	  <h2>_________________________</h2>
 	  <h2 style="display:inline;" >Le Black Coach :</h2><h3 style="display:inline;" ><br />Le Black Coach, c’est des vidéos de quelques minutes sur des sujets de société, de développement personnel et même parfois des trucs de science ou de philo.</br>Le Black Coach, c'est pour ceux qui aiment regarder derrière les masques.</br></br></h3>
-	  <iframe style="position:relative;z-index:1"  width="900" height="300" src="https://www.youtube.com/embed/k7X380lfZtc" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe style="position:relative;z-index:1"  width="80%" height="300" src="https://www.youtube.com/embed/k7X380lfZtc" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	  
 	  <h2>_________________________</h2>
 	  <h2 style="display:inline;" >Nepptenio :</h2><h3 style="display:inline;" ><br />Animateur débutant, qui réalise des parodies de jeux-vidéos à partir de dessins réalisés de sa patte !</br></br></h3>
-	  <iframe style="position:relative;z-index:1"  width="900" height="300" src="https://www.youtube.com/embed/0OEiOuoMbNg" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe style="position:relative;z-index:1"  width="80%" height="300" src="https://www.youtube.com/embed/0OEiOuoMbNg" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	  
 	  <h2>_________________________</h2>
 	  <h2 style="display:inline;" >MisterFlech :</h2><h3 style="display:inline;" ><br />Il anime l'émission Reset System depuis Janvier 2014. Il s'agit d'une chronique parlant à chaque épisode d'une licence, d'un jeu, ou d'un thème en rapport avec les jeux vidéo, le tout de manière informative, humoristique et critique.</br></br></h3>
-	  <iframe style="position:relative;z-index:1"  width="900" height="300" src="https://www.youtube.com/embed/yJnfa99a9Z4" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe style="position:relative;z-index:1"  width="80%" height="300" src="https://www.youtube.com/embed/yJnfa99a9Z4" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	  
 	  <h2>_________________________</h2>
 	  <h2 style="display:inline;" >Monsieur Flap :</h2><h3 style="display:inline;" ><br />C’est l’histoire d’un homme avec une tête de cul qui tombe amoureux. Monsieur Flap est amoureux d’Anaïs, la coiffeuse d’en face. Sur les conseils d’un clochard, Il décide de lui offrir une fleur. C’est la catastrophe.</br></br></h3>
-	  <iframe style="position:relative;z-index:1"  width="900" height="300" src="https://www.youtube.com/embed/GHR21HB4cZ8" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe style="position:relative;z-index:1"  width="80%" height="300" src="https://www.youtube.com/embed/GHR21HB4cZ8" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	   
 	  <h2>_________________________</h2>
 	  <h2 style="display:inline;" >La Petite Mort :</h2><h3 style="display:inline;" ><br />Le destin d’un jeune faucheur, incarnation de la Mort pour les vivants qui aimerait davantage devenir fleuriste que d’embrasser la funeste profession de son père. La petite mort, le personnage central, est en plein apprentissage de la vie …et surtout de la Mort avec toutes les interrogations paradoxales et existentielles que cela peut soulever.</br></br></h3>
-	  <iframe style="position:relative;z-index:1"  width="900" height="300" src="https://www.youtube.com/embed/XiY0AdNd79s" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe style="position:relative;z-index:1"  width="80%" height="300" src="https://www.youtube.com/embed/XiY0AdNd79s" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	  
   
 

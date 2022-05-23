@@ -2,12 +2,12 @@
 <html lang="fr" prefix="og: http://ogp.me/ns#">
 
 <head>
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="scripts/script.js"></script>
   <meta name="google-site-verification" content="v59COEI73kZCWXH13MtFP7oqdemr2uV4nI9cVkNHs1A" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <title>N.A.G. Corporation</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
   <meta property="og:image" content="https://estorc.github.io/N.A.G.Corporation/images/icon.png" />
@@ -17,14 +17,31 @@
   <meta property="og:title" content="N.A.G. Corporation" />
   <meta property="og:site_name" content="N.A.G. Corporation" />
   <link rel="icon" href="images/icon.png" />
-  <script>
-	screen.orientation.lock('landscape');
-  </script>
 </head>
 
 <body>
 <div class="background">
 </div>
+
+
+		<div id='phoneMenu'>
+			<a href="javascript:phoneMenu();" style="color:white;">
+			<img alt="phoneMenu" src="images/phonebutton.png" />
+			</a>
+			<nav id='phoneMenuList'>
+				<a href="index.html">Acceuil</a><br>
+				<a href="videos.html">Vidéos</a><br>
+				<a href="others.html">Autres</a><br>
+				<a href="about.html">Raptor Production</a><br>
+				<a href="about.html">Projets</a><br>
+				<p style='line-height:5px;'>----------------</p>
+				<a href="https://www.twitch.tv/nag_corp">Twitch</a><br>
+				<a href="https://www.youtube.com/channel/UCkPvXHZi_QuzxvKqiYtuy7g">Youtube</a><br>
+				<a href="https://discord.gg/NQcQtTc">Discord</a><br>
+			</nav>
+		</div>
+		
+		
 <div class="core">
 	
 	
@@ -64,17 +81,17 @@
 	
 	<div class="socialsbuttons">
 		<a class="socialbutton" href="https://www.twitch.tv/nag_corp">
-			<img style="top:15px;display:inline;width:50px;height:50px;" src="images/twitch.png" alt="N.A.G. Big Logo" />
+			<img style="position:relative;top:15px;display:inline;width:50px;height:50px;" src="images/twitch.png" alt="N.A.G. Big Logo" />
 			<h2 style="color:white;display:inline;"> Twitch </h2>
 		</a>
 
 		<a class="socialbutton" href="https://www.youtube.com/channel/UCkPvXHZi_QuzxvKqiYtuy7g">
-			<img style="display:inline;width:50px;height:30px" src="images/youtube.png" alt="N.A.G. Big Logo" />
+			<img style="position:relative;display:inline;width:50px;height:30px" src="images/youtube.png" alt="N.A.G. Big Logo" />
 			<h2 style="color:white;display:inline;"> Youtube </h2>
 		</a>
 		
 		<a class="socialbutton" href="https://discord.gg/NQcQtTc">
-			<img style="top:15px;display:inline;width:50px;height:50px" src="images/discord.png" alt="N.A.G. Big Logo" /> 
+			<img style="position:relative;top:15px;display:inline;width:50;height:50px" src="images/discord.png" alt="N.A.G. Big Logo" /> 
 			<h2 style="color:white;display:inline;"> Discord </h2>
 		</a><br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
 	</div>
@@ -90,7 +107,7 @@
 	  <img class="lower_left_screw" src="images/screw.png"/>
 	  <img class="lower_right_screw" src="images/screw.png"/>
 	  
-	  <h1>----- Qui sommes-nous ? -----</h1> 
+	  <h1><span id='pctext'>----- </span>Qui sommes-nous ?<span id='pctext'> -----</span></h1> 
 	  <h2>_________________________</h2>
 	  
 	  <img class="estorc-img" src="images/estorc.png" alt="Image de Estorc" />
@@ -118,7 +135,7 @@
 	  <img class="lower_left_screw" src="images/screw.png"/>
 	  <img class="lower_right_screw" src="images/screw.png"/>
 	  
-	  <h1>----- Pourquoi N.A.G. ? -----</h1> 
+	  <h1><span id='pctext'>----- </span>Pourquoi N.A.G. ?<span id='pctext'> -----</span></h1> 
 	  <h2>_________________________</h2>
 	  
 	  <h2 style="display:inline;" >Réponse de Estorc : </h2>
