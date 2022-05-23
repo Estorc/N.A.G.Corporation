@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 body {
 
@@ -9,10 +9,13 @@ background-attachment: fixed;
 
 }
 
-h2 {
+h2,h1 {
 
-	text-overflow: clip;
+	overflow: hidden;
+	white-space: nowrap; /* Don't forget this one */
+	text-overflow: ellipsis;
 	font-size:1.5em;
+	position:relative;
 	
 }
 
@@ -607,6 +610,18 @@ background: linear-gradient(0deg, rgba(0,42,65,1) 23%, rgba(255,255,255,1) 100%)
 	div.core {
 		
 	  width: 95%;
+		
+	}
+	
+	div.page {
+		
+	  width: 70%;
+		
+	}
+	
+	h1 {
+		
+		font-size:2.3em;
 		
 	}
 	
