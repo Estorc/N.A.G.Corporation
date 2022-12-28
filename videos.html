@@ -31,8 +31,8 @@
 				<a href="index.html">Acceuil</a><br>
 				<a href="videos.html">Vidéos</a><br>
 				<a href="others.html">Autres</a><br>
-				<a href="about.html">Raptor Production</a><br>
-				<a href="about.html">Projets</a><br>
+				<a href="https://estorc.github.io/RAPTOR-PRODUCTION/">Raptor Production</a><br>
+				<a href="https://estorc.github.io/RADIO-N.A.G./">Radio N.A.G.</a><br>
 				<p style='line-height:5px;'>----------------</p>
 				<a href="https://www.twitch.tv/nag_corp">Twitch</a><br>
 				<a href="https://www.youtube.com/channel/UCkPvXHZi_QuzxvKqiYtuy7g">Youtube</a><br>
@@ -49,22 +49,22 @@
 
 		<div class="buttonvideo">
 			<a href="videos.html">
-				<img style="width:100%;height:100%;" src="images/videos-button.png" alt="N.A.G. Big Logo" /> <br />
+				<img style="width:100%;height:100%;" src="images/Videos_Button.png" alt="N.A.G. Big Logo" /> <br />
 			</a>
 		</div>
 		<div class="button2">
-			<a href="pkmnr.html">
-				<img style="width:100%;height:100%;" src="images/pkmn-button.png" alt="N.A.G. Big Logo" /> <br />
+			<a href="https://estorc.github.io/RADIO-N.A.G./">
+				<img style="width:100%;height:100%;" src="images/Radio_Button.png" alt="N.A.G. Big Logo" /> <br />
 			</a>
 		</div>
 		<div class="button3">
-			<a href="blog.html">
-				<img style="width:100%;height:100%;" src="images/blog-button.png" alt="N.A.G. Big Logo" /> <br />
+			<a href="https://estorc.github.io/RAPTOR-PRODUCTION/">
+				<img style="width:100%;height:100%;" src="images/RProd_Button.png" alt="N.A.G. Big Logo" /> <br />
 			</a>
 		</div>
 		<div class="button4">
 			<a href="others.html">
-				<img style="width:100%;height:100%;" src="images/others.png" alt="N.A.G. Big Logo" /> <br />
+				<img style="width:100%;height:100%;" src="images/Others_Button.png" alt="N.A.G. Big Logo" /> <br />
 			</a>
 		</div>
 		
@@ -111,12 +111,35 @@
 	  <h2>_________________________</h2>
 	  <h2>Dernière vidéo :</h2>
 	  
-	  <iframe width="60%" height="315" src="https://www.youtube.com/embed/91WwND5zFFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe width="70%" height="315" src="https://www.youtube.com/embed/91WwND5zFFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	 
 	  <h2>_________________________</h2>
 	  <h2>Live Twitch :</h2>
-	  <iframe style="display:inline;position:relative;z-index:1" src="https://player.twitch.tv/?channel=nag_corp&parent=streamernews.example.com" frameborder="0" allowfullscreen scrolling="no" height="378" width="70%"></iframe>
-	  <iframe style="display:inline;position:relative;z-index:1" src="https://www.twitch.tv/embed/nag_corp/chat?parent=nag_corp.twitch.tv" frameborder="0" scrolling="no" height="378" width="20%"></iframe>
+	  <div style="position:relative;display: inline" id="twitch-embed"></div>
+	  <iframe style="position:relative;display:inline" id="twitch-chat-embed"
+				src="https://www.twitch.tv/embed/nag_corp/chat?parent=estorc.github.io"
+				height="500"
+				width="38%">
+	  </iframe>
+	  
+	  <!-- Load the Twitch embed JavaScript file -->
+	  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+	  <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+	  <script type="text/javascript">
+	    var embed = new Twitch.Embed("twitch-embed", {
+			width: '60%',
+			height: 500,
+			channel: "nag_corp",
+			// Only needed if this page is going to be embedded on other websites
+			parent: ["estorc.github.io"]
+		 });
+
+      embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+        var player = embed.getPlayer();
+        player.play();
+      });
+	  </script>
 	  
 	  <h2>_________________________</h2>
 	  <h2>Nos p'tits amis :</h2>

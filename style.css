@@ -141,7 +141,7 @@ background-repeat:repeat;
 				
 				text-align: center;
 				margin: 0 auto;  
-				left: 63%;
+				left: 65%;
 				top: 40%;
 				
 				-webkit-transition: all 0.5s ease-in-out;
@@ -152,11 +152,11 @@ background-repeat:repeat;
 
 			.buttonvideo:hover{
 
-				-webkit-transform: translateX(130px); 
-				-moz-transform: translateX(130px); 
-				-ms-transform: translateX(130px); 
-				-o-transform: translateX(130px); 
-				transform: translateX(130px); 
+				-webkit-transform: translateX(120px); 
+				-moz-transform: translateX(120px); 
+				-ms-transform: translateX(120px); 
+				-o-transform: translateX(120px); 
+				transform: translateX(120px); 
 			}
 			
 			.button2{
@@ -165,7 +165,7 @@ background-repeat:repeat;
 				
 				text-align: center;
 				margin: 0 auto;  
-				left: 63%;
+				left: 65%;
 				top: 70%;
 				
 				-webkit-transition: all 0.5s ease-in-out;
@@ -177,10 +177,10 @@ background-repeat:repeat;
 			.button2:hover{
 
 				-webkit-transform: translateX(130px); 
-				-moz-transform: translateX(130px); 
-				-ms-transform: translateX(130px); 
-				-o-transform: translateX(130px); 
-				transform: translateX(130px); 
+				-moz-transform: translateX(120px); 
+				-ms-transform: translateX(120px); 
+				-o-transform: translateX(120px); 
+				transform: translateX(120px); 
 			}
 			
 			.button3{
@@ -189,7 +189,7 @@ background-repeat:repeat;
 				
 				text-align: center;
 				margin: 0 auto;  
-				right: 63%;
+				right: 65%;
 				top: 40%;
 				
 				-webkit-transition: all 0.5s ease-in-out;
@@ -200,11 +200,11 @@ background-repeat:repeat;
 
 			.button3:hover{
 
-				-webkit-transform: translateX(-130px); 
-				-moz-transform: translateX(-130px); 
-				-ms-transform: translateX(-130px); 
-				-o-transform: translateX(-130px); 
-				transform: translateX(-130px); 
+				-webkit-transform: translateX(-120px); 
+				-moz-transform: translateX(-120px); 
+				-ms-transform: translateX(-120px); 
+				-o-transform: translateX(-120px); 
+				transform: translateX(-120px); 
 			}
 			
 			.button4{
@@ -213,7 +213,7 @@ background-repeat:repeat;
 				
 				text-align: center;
 				margin: 0 auto;  
-				right: 63%;
+				right: 65%;
 				top: 70%;
 				
 				-webkit-transition: all 0.5s ease-in-out;
@@ -224,11 +224,11 @@ background-repeat:repeat;
 
 			.button4:hover{
 
-				-webkit-transform: translateX(-130px); 
-				-moz-transform: translateX(-130px); 
-				-ms-transform: translateX(-130px); 
-				-o-transform: translateX(-130px); 
-				transform: translateX(-130px); 
+				-webkit-transform: translateX(-120px); 
+				-moz-transform: translateX(-120px); 
+				-ms-transform: translateX(-120px); 
+				-o-transform: translateX(-120px); 
+				transform: translateX(-120px); 
 			}
 	
 	
